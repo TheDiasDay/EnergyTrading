@@ -75,18 +75,5 @@ Contributions to the Energy Trading Platform are welcome. Please follow these st
 
 Alternatively, see the GitHub documentation on [creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
 
-## License
+![image](https://github.com/user-attachments/assets/472e29c4-0ccf-4234-ac26-48596a313770)
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Contact
-
-If you want to contact the maintainer of this project, please email energy@trading-platform.com.
-
-## Acknowledgements
-
-- [React](https://reactjs.org/)
-- [ethers.js](https://docs.ethers.io/v5/)
-- [Recharts](https://recharts.org/en-US/)
-- [Lucide React](https://lucide.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
