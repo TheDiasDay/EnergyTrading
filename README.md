@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Energy Trading Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Energy Trading Platform is a decentralized application (dApp) that allows users to buy and sell excess renewable energy. Built on the Ethereum blockchain, this platform aims to promote renewable energy usage, increase energy efficiency, and reduce dependency on traditional power grids.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- MetaMask integration for secure authentication
+- Real-time energy production and consumption tracking
+- Peer-to-peer energy trading marketplace
+- Transaction history and wallet balance display
+- Interactive dashboard with energy overview charts
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before you begin, ensure you have met the following requirements:
 
-### `npm test`
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
+- MetaMask browser extension
+- An Ethereum wallet with some ETH for gas fees (on the network where your smart contract is deployed)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/energy-trading-platform.git
+   cd energy-trading-platform
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install the dependencies:
+   ```
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Create a `.env` file in the root directory and add your contract address:
+   ```
+   REACT_APP_CONTRACT_ADDRESS=your_contract_address_here
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Update the `contractABI` in `src/App.js` with your smart contract's ABI.
 
-### `npm run eject`
+## Running the Application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Start the development server:
+   ```
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Open your browser and navigate to `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Ensure MetaMask is connected to the correct network where your smart contract is deployed.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Connect your MetaMask wallet by clicking the "Connect to MetaMask" button.
+2. Once connected, you'll see the main dashboard with your energy balance, current production, and wallet balance.
+3. Navigate between the Overview, Energy Market, and Transactions tabs to access different features.
+4. In the Energy Market tab, you can list your excess energy for sale or purchase energy from other users.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Smart Contract
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The Energy Trading Platform interacts with a smart contract deployed on the Ethereum blockchain. Ensure you have deployed the contract and have the correct ABI and address.
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions to the Energy Trading Platform are welcome. Please follow these steps:
 
-### Analyzing the Bundle Size
+1. Fork the repository.
+2. Create a new branch: `git checkout -b <branch_name>`.
+3. Make your changes and commit them: `git commit -m '<commit_message>'`
+4. Push to the original branch: `git push origin <project_name>/<location>`
+5. Create the pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Alternatively, see the GitHub documentation on [creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you want to contact the maintainer of this project, please email energy@trading-platform.com.
 
-### Deployment
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React](https://reactjs.org/)
+- [ethers.js](https://docs.ethers.io/v5/)
+- [Recharts](https://recharts.org/en-US/)
+- [Lucide React](https://lucide.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
